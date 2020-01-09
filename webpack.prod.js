@@ -8,20 +8,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"]
       }
     ]
   },
   resolve: {
-    extensions: ["*", ".js"]
+    extensions: ["*", ".js", ".jsx"]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "hello webpack bundled js project",
-      template: "./dist/index.html"
+      template: "./dist/index.html",
+      filename: "index.html"
     })
   ],
   devtool: "source-map",
@@ -30,6 +31,9 @@ module.exports = {
     path: __dirname + "/dist",
     publicPath: "/",
     filename: "bundle.js"
+  },
+  stats: {
+    children: false
   },
   // 3
   devServer: {

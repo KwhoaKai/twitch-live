@@ -1,12 +1,15 @@
 {
   "name": "testReactWP",
   "version": "1.0.0",
+  "homepage": "http://kwhoakai.github.io/twitch-live/",
   "description": "node,babel,webpack, react test",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config ./webpack.prod.js"
+    "build": "webpack --config ./webpack.prod.js",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "babel": {
     "presets": [
@@ -36,6 +39,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
