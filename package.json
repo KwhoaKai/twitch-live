@@ -1,7 +1,7 @@
 {
   "name": "testReactWP",
   "version": "1.0.0",
-  "homepage": "http://kwhoakai.github.io/twitch-live/",
+  "homepage": "http://kwhoakai.github.io/twitchy/",
   "description": "node,babel,webpack, react test",
   "main": "index.js",
   "scripts": {
