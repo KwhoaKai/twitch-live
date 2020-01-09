@@ -1,7 +1,10 @@
 # Twitchy
-![Twitchy demo](demo/demo.gif)  
+
+<p align="center">
+  <img src="demo/demo.gif">
+</p>
+   
+Simple React app that to search for live twitch streamers.
   
 Hosted @ https://yikaikuo.com/twitchy/  
 
-React app that allows users to search for Twitch streamers to check their live status.
-Displays cards for each streamer.
